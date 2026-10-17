@@ -1,0 +1,3 @@
+'QLDPC.DistanceProof.Certificate.no_small_normalizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QLDPC.DistanceProof.Certificate.logical_weight_ge_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QLDPC.DistanceProof.Certificate.weight_zero_eq_zero' depends on axioms: [propext, Quot.sound]

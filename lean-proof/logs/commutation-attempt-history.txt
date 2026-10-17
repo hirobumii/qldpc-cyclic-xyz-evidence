@@ -1,0 +1,20 @@
+Commutation build recovery record (2026-10-17 UTC)
+
+1. A single all-pairs kernel-decide theorem terminated with exit137 (signal9)
+   during memory-heavy compilation. No completed commutation proof was claimed.
+2. Per-row theorems in one module, with default asynchronous theorem elaboration,
+   also terminated with exit137. No completed commutation proof was claimed.
+3. Serial per-row elaboration in one large module was manually stopped with
+   Ctrl-C, exit130, after approximately 4.5 minutes and increased memory use.
+   Lake had not persisted a completed module. No partial module was relied on.
+4. The proof was split into import-chained five-row modules, each a separate
+   Lean process. A generic Bool simplification type mismatch was exposed and
+   fixed before proceeding. That failed build exited1.
+5. The current checkpointed run is recorded in commutation-build.txt, including
+   final exit status, elapsed time, child CPU time, and peak child RSS. Completed
+   chunks are ordinary kernel-checked .olean modules. Trust assumptions did not
+   change between attempts.
+
+A missing /usr/bin/time command returned127 before a compiler was started;
+resource recording was replaced with Python's standard subprocess/resource
+facilities. These are operational logs, not mathematical certificates.

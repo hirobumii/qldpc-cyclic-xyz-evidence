@@ -1,0 +1,18 @@
+ℹ [19/30] Replayed QLDPC.RankWitness
+info: ././././QLDPC/RankWitness.lean:91:0: 'QLDPC.Candidates.l7_rank' depends on axioms: [propext, Quot.sound]
+info: ././././QLDPC/RankWitness.lean:92:0: 'QLDPC.Candidates.l11_rank' depends on axioms: [propext, Quot.sound]
+info: ././././QLDPC/RankWitness.lean:93:0: 'QLDPC.Candidates.witness7_logical' depends on axioms: [propext, Quot.sound]
+info: ././././QLDPC/RankWitness.lean:94:0: 'QLDPC.Candidates.witness11_logical' depends on axioms: [propext, Quot.sound]
+✔ [20/30] Built QLDPC.DistancePairs11_2
+✔ [21/30] Built QLDPC.DistancePairs11_3
+✔ [22/30] Built QLDPC.DistancePairs11_4
+✔ [23/30] Built QLDPC.DistancePairs11_5
+✔ [24/30] Built QLDPC.DistancePairs11_6
+✔ [25/30] Built QLDPC.DistancePairs11_7
+✔ [26/30] Built QLDPC.DistancePairs11_8
+✔ [27/30] Built QLDPC.DistancePairs11_9
+✔ [28/30] Built QLDPC.DistancePairs11_10
+✔ [29/30] Built QLDPC.Distance
+✔ [30/30] Built QLDPC.DistanceExact
+Build completed successfully.
+exit 0 seconds 337.4590640068054 maxrss_kb 837280

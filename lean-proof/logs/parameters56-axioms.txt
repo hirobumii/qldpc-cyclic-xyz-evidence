@@ -1,0 +1,5 @@
+'QLDPC.xyz56_parameters' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QLDPC.xyz56_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QLDPC.xyz56_geometry' depends on axioms: [propext, Quot.sound]
+'QLDPC.Candidates.l7_pairwise_commute' depends on axioms: [propext, Quot.sound]
+'QLDPC.Candidates.l11_pairwise_commute' depends on axioms: [propext, Quot.sound]

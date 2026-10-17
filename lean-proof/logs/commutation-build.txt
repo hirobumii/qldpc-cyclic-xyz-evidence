@@ -1,0 +1,22 @@
+✔ [4/23] Built QLDPC.Commutation.Core
+✔ [5/23] Built QLDPC.Commutation.Chunk00
+✔ [6/23] Built QLDPC.Commutation.Chunk01
+✔ [7/23] Built QLDPC.Commutation.Chunk02
+✔ [8/23] Built QLDPC.Commutation.Chunk03
+✔ [9/23] Built QLDPC.Commutation.Chunk04
+✔ [10/23] Built QLDPC.Commutation.Chunk05
+✔ [11/23] Built QLDPC.Commutation.Chunk06
+✔ [12/23] Built QLDPC.Commutation.Chunk07
+✔ [13/23] Built QLDPC.Commutation.Chunk08
+✔ [14/23] Built QLDPC.Commutation.Chunk09
+✔ [15/23] Built QLDPC.Commutation.Chunk10
+✔ [16/23] Built QLDPC.Commutation.Chunk11
+✔ [17/23] Built QLDPC.Commutation.Chunk12
+✔ [18/23] Built QLDPC.Commutation.Chunk13
+✔ [19/23] Built QLDPC.Commutation.Chunk14
+✔ [20/23] Built QLDPC.Commutation.Chunk15
+✔ [21/23] Built QLDPC.Commutation.Chunk16
+✔ [22/23] Built QLDPC.Commutation.Chunk17
+✔ [23/23] Built QLDPC.Commutation
+Build completed successfully.
+Exit: 0; elapsed seconds: 347.584; child CPU user/system seconds: 337.623/9.819; peak child RSS KiB: 736556

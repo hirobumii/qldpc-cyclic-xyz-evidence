@@ -1,0 +1,1 @@
+Project proof source check: no admitted proofs, custom axioms, or native trust escapes.

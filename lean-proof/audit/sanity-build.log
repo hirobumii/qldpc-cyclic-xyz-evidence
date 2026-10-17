@@ -1,0 +1,6 @@
+'QLDPCAudit.product_in_span' depends on axioms: [propext]
+'QLDPCAudit.product_not_in_generator_list' depends on axioms: [propext]
+'QLDPCAudit.y_support_weight' depends on axioms: [propext]
+'QLDPCAudit.duplicate_row_relation' depends on axioms: [propext]
+'QLDPCAudit.xx_zz_yy_commute' depends on axioms: [propext]
+'QLDPCAudit.all_plus_phase_counterexample' depends on axioms: [propext]

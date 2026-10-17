@@ -1,0 +1,6 @@
+'QLDPC.DistanceProof.no_small_normalizer7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QLDPC.DistanceProof.no_small_normalizer11' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QLDPC.DistanceProof.lower_bound7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QLDPC.DistanceProof.lower_bound11' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QLDPC.Candidates.l7_exact_distance_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QLDPC.Candidates.l11_exact_distance_four' depends on axioms: [propext, Classical.choice, Quot.sound]

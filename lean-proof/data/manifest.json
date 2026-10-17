@@ -1,0 +1,12 @@
+{
+  "xyz-degree-five-cube-L7.json": {
+    "sha256": "c598183c0768f29abffb430992543ce3cd7ddbb1337be0701c7db5ad88252c45",
+    "n": 56,
+    "k_metadata": 24
+  },
+  "xyz-degree-five-cube-L11.json": {
+    "sha256": "353865b626ea7205b62e5fcf0826b4aa453f506d28330c6291fcf1d8344ffefe",
+    "n": 88,
+    "k_metadata": 36
+  }
+}

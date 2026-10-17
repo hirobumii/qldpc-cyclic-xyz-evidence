@@ -1,0 +1,35 @@
+Submission preparation, 2026-10-17. All commands below exited 0 in a copy
+of the delivered proof package, preserving the delivered evidence.
+
+python3 scripts/verify_bundle.py
+  Verified 115 delivered files and SOURCE_MANIFEST.json.
+python3 audit/check_literal_binding.py
+  L7 and L11 support lists, packed rows and witness exactly match JSON;
+  no integer truncation.
+python3 audit/independent_candidate_audit.py --original-dir ORIGINAL_CANDIDATES
+  Original research files compared byte for byte with proof data copies.
+  L7: n=56, rank=32, k=24, pairwise commute, row weight=8, degree=5;
+      168 single errors, 13860 distinct-site pairs audited;
+      no weight-1/2/3 normalizer, weight-4 logical checked.
+  L11: n=88, rank=52, k=36, pairwise commute, row weight=8, degree=5;
+       264 single errors, 34452 distinct-site pairs audited;
+       no weight-1/2/3 normalizer, weight-4 logical checked.
+  Both: all eight dependencies multiply to positive identity under the
+  chosen all-plus Hermitian interpretation (external Python evidence).
+python3 scripts/check_sources.py
+  No admitted proofs, custom axioms or native trust escapes.
+python3 audit/scan_proof_sources.py
+  59 files scanned, findings=[], unexpected_external_imports=[].
+python3 scripts/check_regeneration.py
+  All four generators reproduce byte for byte; 58 source/data files checked.
+
+Input SHA-256:
+L7  c598183c0768f29abffb430992543ce3cd7ddbb1337be0701c7db5ad88252c45
+L11 353865b626ea7205b62e5fcf0826b4aa453f506d28330c6291fcf1d8344ffefe
+
+Delivered independent Lean clean build: see lean-proof/audit/final-result.json.
+No new Lean kernel build was run during this preparation.
+Original outer ZIP A/B hashes could not be checked: the uploaded file was
+a combined handoff ZIP, SHA-256
+ae1a0630ec3a5dc402e28b0e2a6577bd6a0f51c44d31e7e5ff6ca320e69639a7.
+Its CRC and both inner delivered manifests passed.

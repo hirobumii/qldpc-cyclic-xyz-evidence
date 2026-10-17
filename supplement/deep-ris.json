@@ -1,0 +1,12 @@
+{
+  "upstream_commit": "0433d4ff5ff371976c0c03b02b103770f9fe0ee9",
+  "command": "python verify/heuristic_distance.py INPUT --trials 20000 --fast-trials 2000000 --fold-trials 50000 --seed SEED",
+  "accelerator_threads": 8,
+  "pair_depth": 8,
+  "runs": [
+    {"name": "Algebraic obstruction: xyz-degree-five-cube-L7", "claimed_d": 4, "d_heuristic": 4, "verdict": "corroborated", "sides": {"P": {"value": 4, "lightest_found": 4, "witness": {"X": [], "Z": [18, 25, 31, 38]}}}, "trials": 2000000, "seed": 2026101701, "method": "ris-pauli+orbit-fold(6+12f)+gf2_fast(doubled)", "fold_partitions": 18},
+    {"name": "Algebraic obstruction: xyz-degree-five-cube-L7", "claimed_d": 4, "d_heuristic": 4, "verdict": "corroborated", "sides": {"P": {"value": 4, "lightest_found": 4, "witness": {"X": [9, 25, 31, 47], "Z": []}}}, "trials": 2000000, "seed": 2026101702, "method": "ris-pauli+orbit-fold(7+12f)+gf2_fast(doubled)", "fold_partitions": 19},
+    {"name": "Algebraic obstruction: xyz-degree-five-cube-L11", "claimed_d": 4, "d_heuristic": 4, "verdict": "corroborated", "sides": {"P": {"value": 4, "lightest_found": 4, "witness": {"X": [], "Z": [17, 27, 61, 71]}}}, "trials": 2000000, "seed": 2026101781, "method": "ris-pauli+orbit-fold(7+12f)+gf2_fast(doubled)", "fold_partitions": 19},
+    {"name": "Algebraic obstruction: xyz-degree-five-cube-L11", "claimed_d": 4, "d_heuristic": 4, "verdict": "corroborated", "sides": {"P": {"value": 4, "lightest_found": 4, "witness": {"X": [23, 34, 54, 65], "Z": []}}}, "trials": 2000000, "seed": 2026101782, "method": "ris-pauli+orbit-fold(6+12f)+gf2_fast(doubled)", "fold_partitions": 18}
+  ]
+}

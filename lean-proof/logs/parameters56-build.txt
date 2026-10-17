@@ -1,0 +1,12 @@
+ℹ [28/42] Replayed QLDPC.RankWitness
+info: ././././QLDPC/RankWitness.lean:91:0: 'QLDPC.Candidates.l7_rank' depends on axioms: [propext, Quot.sound]
+info: ././././QLDPC/RankWitness.lean:92:0: 'QLDPC.Candidates.l11_rank' depends on axioms: [propext, Quot.sound]
+info: ././././QLDPC/RankWitness.lean:93:0: 'QLDPC.Candidates.witness7_logical' depends on axioms: [propext, Quot.sound]
+info: ././././QLDPC/RankWitness.lean:94:0: 'QLDPC.Candidates.witness11_logical' depends on axioms: [propext, Quot.sound]
+ℹ [30/42] Replayed QLDPC.RankSemantic
+info: ././././QLDPC/RankSemantic.lean:29:0: 'QLDPC.Candidates.l7_unique_coordinates' depends on axioms: [propext, Quot.sound]
+info: ././././QLDPC/RankSemantic.lean:30:0: 'QLDPC.Candidates.l11_unique_coordinates' depends on axioms: [propext, Quot.sound]
+✔ [41/42] Built QLDPC.ParametersCore
+✔ [42/42] Built QLDPC.Parameters56
+Build completed successfully.
+Exit: 0; elapsed seconds: 1.364; child CPU user/system seconds: 1.018/0.359; peak child RSS KiB: 433104

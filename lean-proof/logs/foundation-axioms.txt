@@ -1,0 +1,8 @@
+'QLDPC.Candidates.l7_candidate_binding' depends on axioms: [propext]
+'QLDPC.Candidates.l11_candidate_binding' depends on axioms: [propext]
+'QLDPC.Candidates.l7_cube_construction' depends on axioms: [propext]
+'QLDPC.Candidates.l11_cube_construction' depends on axioms: [propext]
+'QLDPC.Candidates.l7_qubit_degree' depends on axioms: [propext]
+'QLDPC.Candidates.l11_qubit_degree' depends on axioms: [propext]
+'QLDPC.Candidates.witness7_weight' depends on axioms: [propext]
+'QLDPC.Candidates.witness11_weight' depends on axioms: [propext]

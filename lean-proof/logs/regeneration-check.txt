@@ -1,0 +1,11 @@
+COMMAND python3 scripts/generate_candidates.py
+COMMAND python3 scripts/generate_commutation.py
+COMMAND python3 generate_rank_certificates.py
+7 rank 32 dual X [0, 1, 2, 3, 4, 5, 6, 14, 15, 16, 17, 18, 19, 20]
+11 rank 52 dual X [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]
+COMMAND python3 tools/generate_distance.py
+PASS: all 4 generators reproduce byte-for-byte; 58 source/data files checked.
+c851dcb870eb6fa301b6c165b51b2307e69a96339260f61aa6a1ab12ea4f4f54  scripts/generate_candidates.py
+57efa74530ff5b8c4f472e1cb09ad6e25f9a7fac3b465c015448b25a11633cfb  scripts/generate_commutation.py
+c73e55fc13849bf6c248c7085e665cac66f38e4a70f603ef8bf58492d3ad29a2  generate_rank_certificates.py
+41ce018b33ed7e56d62d34d544887ea8f8a0a6186fc288fd7fefd3580560817a  tools/generate_distance.py

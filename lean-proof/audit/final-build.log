@@ -1,0 +1,224 @@
+
+STAGE foundation 2026-10-17T04:37:00.474006+00:00
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Basic.olean', 'QLDPC/Basic.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Candidates.olean', 'QLDPC/Candidates.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Binding.olean', 'QLDPC/Binding.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Geometry.olean', 'QLDPC/Geometry.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Commutation/Core.olean', 'QLDPC/Commutation/Core.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Commutation/Chunk00.olean', 'QLDPC/Commutation/Chunk00.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Commutation/Chunk01.olean', 'QLDPC/Commutation/Chunk01.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Commutation/Chunk02.olean', 'QLDPC/Commutation/Chunk02.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Commutation/Chunk03.olean', 'QLDPC/Commutation/Chunk03.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Commutation/Chunk04.olean', 'QLDPC/Commutation/Chunk04.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Commutation/Chunk05.olean', 'QLDPC/Commutation/Chunk05.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Commutation/Chunk06.olean', 'QLDPC/Commutation/Chunk06.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Commutation/Chunk07.olean', 'QLDPC/Commutation/Chunk07.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Commutation/Chunk08.olean', 'QLDPC/Commutation/Chunk08.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Commutation/Chunk09.olean', 'QLDPC/Commutation/Chunk09.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Commutation/Chunk10.olean', 'QLDPC/Commutation/Chunk10.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Commutation/Chunk11.olean', 'QLDPC/Commutation/Chunk11.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Commutation/Chunk12.olean', 'QLDPC/Commutation/Chunk12.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Commutation/Chunk13.olean', 'QLDPC/Commutation/Chunk13.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Commutation/Chunk14.olean', 'QLDPC/Commutation/Chunk14.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Commutation/Chunk15.olean', 'QLDPC/Commutation/Chunk15.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Commutation/Chunk16.olean', 'QLDPC/Commutation/Chunk16.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Commutation/Chunk17.olean', 'QLDPC/Commutation/Chunk17.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Commutation.olean', 'QLDPC/Commutation.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Rank.olean', 'QLDPC/Rank.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/RankData.olean', 'QLDPC/RankData.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/RankWitness.olean', 'QLDPC/RankWitness.lean']
+'QLDPC.Candidates.l7_rank' depends on axioms: [propext, Quot.sound]
+'QLDPC.Candidates.l11_rank' depends on axioms: [propext, Quot.sound]
+'QLDPC.Candidates.witness7_logical' depends on axioms: [propext, Quot.sound]
+'QLDPC.Candidates.witness11_logical' depends on axioms: [propext, Quot.sound]
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/RankCoordinates.olean', 'QLDPC/RankCoordinates.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/RankSemantic.olean', 'QLDPC/RankSemantic.lean']
+'QLDPC.Candidates.l7_unique_coordinates' depends on axioms: [propext, Quot.sound]
+'QLDPC.Candidates.l11_unique_coordinates' depends on axioms: [propext, Quot.sound]
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/ParametersCore.olean', 'QLDPC/ParametersCore.lean']
+
+STAGE final 2026-10-17T04:44:30.804713+00:00
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistanceCore.olean', 'QLDPC/DistanceCore.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistanceData7.olean', 'QLDPC/DistanceData7.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistancePairs7_0.olean', 'QLDPC/DistancePairs7_0.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistancePairs7_1.olean', 'QLDPC/DistancePairs7_1.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistancePairs7_2.olean', 'QLDPC/DistancePairs7_2.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistancePairs7_3.olean', 'QLDPC/DistancePairs7_3.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistancePairs7_4.olean', 'QLDPC/DistancePairs7_4.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistancePairs7_5.olean', 'QLDPC/DistancePairs7_5.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistancePairs7_6.olean', 'QLDPC/DistancePairs7_6.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistanceCertified7.olean', 'QLDPC/DistanceCertified7.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Parameters56.olean', 'QLDPC/Parameters56.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistanceData11.olean', 'QLDPC/DistanceData11.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistancePairs11_0.olean', 'QLDPC/DistancePairs11_0.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistancePairs11_1.olean', 'QLDPC/DistancePairs11_1.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistancePairs11_2.olean', 'QLDPC/DistancePairs11_2.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistancePairs11_3.olean', 'QLDPC/DistancePairs11_3.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistancePairs11_4.olean', 'QLDPC/DistancePairs11_4.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistancePairs11_5.olean', 'QLDPC/DistancePairs11_5.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistancePairs11_6.olean', 'QLDPC/DistancePairs11_6.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistancePairs11_7.olean', 'QLDPC/DistancePairs11_7.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistancePairs11_8.olean', 'QLDPC/DistancePairs11_8.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistancePairs11_9.olean', 'QLDPC/DistancePairs11_9.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistancePairs11_10.olean', 'QLDPC/DistancePairs11_10.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Distance.olean', 'QLDPC/Distance.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Parameters88.olean', 'QLDPC/Parameters88.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/Parameters.olean', 'QLDPC/Parameters.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC.olean', 'QLDPC.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/Audit.olean', 'Audit.lean']
+'QLDPC.xyz56_parameters' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QLDPC.xyz88_parameters' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QLDPC.xyz56_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QLDPC.xyz88_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QLDPC.xyz56_geometry' depends on axioms: [propext, Quot.sound]
+'QLDPC.xyz88_geometry' depends on axioms: [propext, Quot.sound]
+'QLDPC.Candidates.l7_candidate_binding' depends on axioms: [propext]
+'QLDPC.Candidates.l11_candidate_binding' depends on axioms: [propext]
+'QLDPC.Candidates.l7_cube_construction' depends on axioms: [propext]
+'QLDPC.Candidates.l11_cube_construction' depends on axioms: [propext]
+'QLDPC.Candidates.supports7_in_range' depends on axioms: [propext, Quot.sound]
+'QLDPC.Candidates.supports11_in_range' depends on axioms: [propext, Quot.sound]
+'QLDPC.Candidates.l7_rank' depends on axioms: [propext, Quot.sound]
+'QLDPC.Candidates.l11_rank' depends on axioms: [propext, Quot.sound]
+'QLDPC.Candidates.l7_unique_coordinates' depends on axioms: [propext, Quot.sound]
+'QLDPC.Candidates.l11_unique_coordinates' depends on axioms: [propext, Quot.sound]
+'QLDPC.Candidates.witness7_logical' depends on axioms: [propext, Quot.sound]
+'QLDPC.Candidates.witness11_logical' depends on axioms: [propext, Quot.sound]
+'QLDPC.DistanceProof.no_small_normalizer7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QLDPC.DistanceProof.no_small_normalizer11' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QLDPC.DistanceProof.lower_bound7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QLDPC.DistanceProof.lower_bound11' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', '-o', '/workspace/shared/qldpc-lean-20261017/audit/fresh-build/olean/QLDPC/DistanceExact.olean', 'QLDPC/DistanceExact.lean']
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', 'AuditFinal.lean']
+QLDPC.xyz56_parameters : QLDPC.HasParameters QLDPC.Candidates.l7 24 4
+'QLDPC.xyz56_parameters' depends on axioms: [propext, Classical.choice, Quot.sound]
+QLDPC.xyz88_parameters : QLDPC.HasParameters QLDPC.Candidates.l11 36 4
+'QLDPC.xyz88_parameters' depends on axioms: [propext, Classical.choice, Quot.sound]
+QLDPC.xyz56_distance : QLDPC.HasDistance QLDPC.Candidates.l7 4
+'QLDPC.xyz56_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+QLDPC.xyz88_distance : QLDPC.HasDistance QLDPC.Candidates.l11 4
+'QLDPC.xyz88_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+QLDPC.xyz56_geometry :
+  QLDPC.Candidates.l7.length = 35 ∧
+    (∀ (p : QLDPC.Pauli 56), p ∈ QLDPC.Candidates.l7 → p.weight = 8) ∧
+      ∀ (i : Fin 56), QLDPC.qubitDegree QLDPC.Candidates.l7 ↑i = 5
+'QLDPC.xyz56_geometry' depends on axioms: [propext, Quot.sound]
+QLDPC.xyz88_geometry :
+  QLDPC.Candidates.l11.length = 55 ∧
+    (∀ (p : QLDPC.Pauli 88), p ∈ QLDPC.Candidates.l11 → p.weight = 8) ∧
+      ∀ (i : Fin 88), QLDPC.qubitDegree QLDPC.Candidates.l11 ↑i = 5
+'QLDPC.xyz88_geometry' depends on axioms: [propext, Quot.sound]
+QLDPC.Candidates.l7_candidate_binding :
+  QLDPC.Candidates.l7 = List.map (fun s => QLDPC.Pauli.ofSupports s.fst s.snd) QLDPC.Candidates.supports7
+'QLDPC.Candidates.l7_candidate_binding' depends on axioms: [propext]
+QLDPC.Candidates.l11_candidate_binding :
+  QLDPC.Candidates.l11 = List.map (fun s => QLDPC.Pauli.ofSupports s.fst s.snd) QLDPC.Candidates.supports11
+'QLDPC.Candidates.l11_candidate_binding' depends on axioms: [propext]
+QLDPC.Candidates.l7_cube_construction : QLDPC.Candidates.l7 = QLDPC.cubeChecks 7
+'QLDPC.Candidates.l7_cube_construction' depends on axioms: [propext]
+QLDPC.Candidates.l11_cube_construction : QLDPC.Candidates.l11 = QLDPC.cubeChecks 11
+'QLDPC.Candidates.l11_cube_construction' depends on axioms: [propext]
+QLDPC.Candidates.supports7_in_range (s : List Nat × List Nat) :
+  s ∈ QLDPC.Candidates.supports7 → ∀ (i : Nat), i ∈ s.fst ++ s.snd → i < 56
+'QLDPC.Candidates.supports7_in_range' depends on axioms: [propext, Quot.sound]
+QLDPC.Candidates.supports11_in_range (s : List Nat × List Nat) :
+  s ∈ QLDPC.Candidates.supports11 → ∀ (i : Nat), i ∈ s.fst ++ s.snd → i < 88
+'QLDPC.Candidates.supports11_in_range' depends on axioms: [propext, Quot.sound]
+QLDPC.Candidates.l7_rank : QLDPC.HasBinaryDimension QLDPC.Candidates.l7 32
+'QLDPC.Candidates.l7_rank' depends on axioms: [propext, Quot.sound]
+QLDPC.Candidates.l11_rank : QLDPC.HasBinaryDimension QLDPC.Candidates.l11 52
+'QLDPC.Candidates.l11_rank' depends on axioms: [propext, Quot.sound]
+QLDPC.Candidates.l7_unique_coordinates (p : QLDPC.Pauli 56) :
+  QLDPC.InSpan QLDPC.Candidates.l7 p →
+    ∃ c,
+      QLDPC.linComb QLDPC.Candidates.basis7 c = p ∧
+        ∀ (d : Fin 32 → Bool), QLDPC.linComb QLDPC.Candidates.basis7 d = p → d = c
+'QLDPC.Candidates.l7_unique_coordinates' depends on axioms: [propext, Quot.sound]
+QLDPC.Candidates.l11_unique_coordinates (p : QLDPC.Pauli 88) :
+  QLDPC.InSpan QLDPC.Candidates.l11 p →
+    ∃ c,
+      QLDPC.linComb QLDPC.Candidates.basis11 c = p ∧
+        ∀ (d : Fin 52 → Bool), QLDPC.linComb QLDPC.Candidates.basis11 d = p → d = c
+'QLDPC.Candidates.l11_unique_coordinates' depends on axioms: [propext, Quot.sound]
+QLDPC.Candidates.witness7_logical : QLDPC.Logical QLDPC.Candidates.l7 QLDPC.Candidates.witness7
+'QLDPC.Candidates.witness7_logical' depends on axioms: [propext, Quot.sound]
+QLDPC.Candidates.witness11_logical : QLDPC.Logical QLDPC.Candidates.l11 QLDPC.Candidates.witness11
+'QLDPC.Candidates.witness11_logical' depends on axioms: [propext, Quot.sound]
+QLDPC.DistanceProof.no_small_normalizer7 (p : QLDPC.Pauli 56) (hp : QLDPC.Normalizes QLDPC.Candidates.l7 p)
+  (hw : p.weight < 4) : p.weight = 0
+'QLDPC.DistanceProof.no_small_normalizer7' depends on axioms: [propext, Classical.choice, Quot.sound]
+QLDPC.DistanceProof.no_small_normalizer11 (p : QLDPC.Pauli 88) (hp : QLDPC.Normalizes QLDPC.Candidates.l11 p)
+  (hw : p.weight < 4) : p.weight = 0
+'QLDPC.DistanceProof.no_small_normalizer11' depends on axioms: [propext, Classical.choice, Quot.sound]
+QLDPC.DistanceProof.lower_bound7 (p : QLDPC.Pauli 56) (hp : QLDPC.Logical QLDPC.Candidates.l7 p) : 4 ≤ p.weight
+'QLDPC.DistanceProof.lower_bound7' depends on axioms: [propext, Classical.choice, Quot.sound]
+QLDPC.DistanceProof.lower_bound11 (p : QLDPC.Pauli 88) (hp : QLDPC.Logical QLDPC.Candidates.l11 p) : 4 ≤ p.weight
+'QLDPC.DistanceProof.lower_bound11' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+COMMAND ['/workspace/shared/qldpc-lean-20261017/.toolchain/lean-4.19.0-linux/bin/lean', '-j1', 'audit/AuditSanity.lean']
+'QLDPCAudit.product_in_span' depends on axioms: [propext]
+'QLDPCAudit.product_not_in_generator_list' depends on axioms: [propext]
+'QLDPCAudit.y_support_weight' depends on axioms: [propext]
+'QLDPCAudit.duplicate_row_relation' depends on axioms: [propext]
+'QLDPCAudit.xx_zz_yy_commute' depends on axioms: [propext]
+'QLDPCAudit.all_plus_phase_counterexample' depends on axioms: [propext]

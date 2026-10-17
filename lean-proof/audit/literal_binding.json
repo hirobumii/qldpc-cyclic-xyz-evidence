@@ -1,0 +1,22 @@
+{
+  "candidate_lean_sha256": "32bac2bb207d6d9f1a33c51a5a2d2c16d70d5974539121930a220b4db94c602a",
+  "results": [
+    {
+      "L": 7,
+      "support_lists_exactly_match_json": true,
+      "packed_rows_exactly_match_json": true,
+      "witness_exactly_matches_json": true,
+      "no_integer_truncation": true,
+      "json_sha256": "c598183c0768f29abffb430992543ce3cd7ddbb1337be0701c7db5ad88252c45"
+    },
+    {
+      "L": 11,
+      "support_lists_exactly_match_json": true,
+      "packed_rows_exactly_match_json": true,
+      "witness_exactly_matches_json": true,
+      "no_integer_truncation": true,
+      "json_sha256": "353865b626ea7205b62e5fcf0826b4aa453f506d28330c6291fcf1d8344ffefe"
+    }
+  ],
+  "formalized_boundary": "Lean proves the literals in Candidates.lean are equal under ofSupports; parsing JSON, comparing copied files, and SHA256 are external audit operations."
+}
