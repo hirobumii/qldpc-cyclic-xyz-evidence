@@ -118,8 +118,9 @@ optimality, all-CSS dominance or experimental resource claim is made.
 
 ## Tool disclosure
 
-The handed-off exploration was labeled "OpenAI dot"; its precise underlying
-model/version was not recorded. OpenAI Codex assisted submission preparation,
+The handed-off exploration was labeled "OpenAI dot". The author identifies the
+model as astra; a precise version identifier was not provided. OpenAI Codex
+assisted submission preparation,
 source and data review, official-tool execution, literature checking and
 drafting. Exact model versions are not asserted. @hirobumii is the confirmed
 human author of record and authorized these publications. The AI disclosure
