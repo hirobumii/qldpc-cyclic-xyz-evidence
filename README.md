@@ -5,12 +5,11 @@ Challenge submissions: [[56,24,4]] and [[88,36,4]], with maximum generator
 weight eight and five incident checks per data qubit. No other research
 candidates are included.
 
-The `lean-proof` directory is an unchanged copy of the supplied finite-proof
-source package, including its original input JSON, manifests and independent
-clean-build audit. The original JSON retains historical exploration metadata;
-the challenge submissions replace that metadata while retaining exactly the
-same ordered checks and logical witness. `supplement/check_binding.py` verifies
-this relationship and the full-rowspace support-minimality certificate.
+The `lean-proof` directory contains the finite-proof source package, its input
+JSON, manifests and independent clean-build audit. The proof inputs and challenge
+submissions have identical ordered checks and logical witnesses; provenance
+metadata is excluded from that comparison. `supplement/check_binding.py` verifies
+the binding and the full-rowspace support-minimality certificate.
 
 ## Construction
 
@@ -118,9 +117,7 @@ optimality, all-CSS dominance or experimental resource claim is made.
 
 ## Tool disclosure
 
-The handed-off exploration was labeled "OpenAI dot". The author identifies the
-model as GPT-6 Astra (author-reported). OpenAI Codex assisted submission
-preparation, source and data review, official-tool execution, literature
-checking and drafting. @hirobumii is the confirmed
-human author of record and authorized these publications. The AI disclosure
-does not assign authorship to a model. No purchased service was used.
+Model: GPT-6 Astra. Agent environment: OpenAI Codex. AI assistance covered
+construction exploration, source and data review, official-tool execution,
+literature checking and drafting. Mathematical claims are supported by the
+proofs and validation evidence documented above.

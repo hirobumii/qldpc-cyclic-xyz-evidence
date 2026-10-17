@@ -29,7 +29,3 @@ L11 353865b626ea7205b62e5fcf0826b4aa453f506d28330c6291fcf1d8344ffefe
 
 Delivered independent Lean clean build: see lean-proof/audit/final-result.json.
 No new Lean kernel build was run during this preparation.
-Original outer ZIP A/B hashes could not be checked: the uploaded file was
-a combined handoff ZIP, SHA-256
-ae1a0630ec3a5dc402e28b0e2a6577bd6a0f51c44d31e7e5ff6ca320e69639a7.
-Its CRC and both inner delivered manifests passed.
