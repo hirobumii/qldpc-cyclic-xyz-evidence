@@ -1,0 +1,23 @@
+Qec663.code663_dX_exact : Qec663.HasSectorDistance Binding663.hz Binding663.hx 10
+Qec663.code663_dZ_exact : Qec663.HasSectorDistance Binding663.hx Binding663.hz 10
+Qec663.code663_distance_exact : Qec663.HasPauliDistance 10
+Qec663.code663_css_distance_certificate :
+  (∀ (x : List Nat), x ∈ Binding663.hx → Binding663.Kernel Binding663.hz (Binding663.ofSupport x)) ∧
+    Qec663.HasSectorDistance Binding663.hz Binding663.hx 10 ∧
+      Qec663.HasSectorDistance Binding663.hx Binding663.hz 10 ∧ Qec663.HasPauliDistance 10
+def Qec663.HasSectorDistance : List (List Nat) → List (List Nat) → Nat → Prop :=
+fun opposite same d =>
+  (∀ (v : Binding663.Vec 663), Binding663.Logical opposite same v → d ≤ Binding663.weight v) ∧
+    ∃ v, Binding663.Logical opposite same v ∧ Binding663.weight v = d
+def Qec663.HasPauliDistance : Nat → Prop :=
+fun d => (∀ (p : Qec663.Pauli), p.Logical → d ≤ p.weight) ∧ ∃ p, p.Logical ∧ p.weight = d
+def Qec663.Pauli.Logical : Qec663.Pauli → Prop :=
+fun p =>
+  Binding663.Kernel Binding663.hz p.x ∧
+    Binding663.Kernel Binding663.hx p.z ∧ ¬(Binding663.RowSpan Binding663.hx p.x ∧ Binding663.RowSpan Binding663.hz p.z)
+def Qec663.Pauli.weight : Qec663.Pauli → Nat :=
+fun p => Binding663.weight fun i => p.x i || p.z i
+'Qec663.code663_dX_exact' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Quot.sound]
+'Qec663.code663_dZ_exact' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Quot.sound]
+'Qec663.code663_distance_exact' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Quot.sound]
+'Qec663.code663_css_distance_certificate' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Quot.sound]

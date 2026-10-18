@@ -2,8 +2,7 @@
 
 Public supplementary material for @hirobumii's two Unitary Foundation QEC
 Challenge submissions: [[56,24,4]] and [[88,36,4]], with maximum generator
-weight eight and five incident checks per data qubit. No other research
-candidates are included.
+weight eight and five incident checks per data qubit. The cyclic XYZ artifacts are retained in their original directories.
 
 The `lean-proof` directory contains the finite-proof source package, its input
 JSON, manifests and independent clean-build audit. The proof inputs and challenge
@@ -121,3 +120,12 @@ Model: GPT-6 Astra. Agent environment: OpenAI Codex. AI assistance covered
 construction exploration, source and data review, official-tool execution,
 literature checking and drafting. Mathematical claims are supported by the
 proofs and validation evidence documented above.
+
+## CSS [[663,351,10]] distance proof
+
+`lean663/` contains a standalone Lean 4.19.0 / Std proof for the literal
+CSS matrices in [qLDPC Challenge PR #3898](https://github.com/unitaryfoundation/qldpc-challenge/pull/3898).
+It proves CSS commutation, exact sector distances 10, and exact binary
+phase-free Pauli distance 10 with union support weight. See
+[`lean663/README.md`](lean663/README.md) for the construction, replay command
+and native-computation trust boundary.

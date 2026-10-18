@@ -1,0 +1,6 @@
+name = "qec663proof"
+version = "0.1.0"
+defaultTargets = ["Qec663Proof"]
+
+[[lean_lib]]
+name = "Qec663Proof"

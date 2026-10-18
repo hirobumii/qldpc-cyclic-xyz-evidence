@@ -1,0 +1,8 @@
+{
+  "candidate_sha256": "9132efb38de1c87efbb892b5379beb5a46110995ede97e66c0b21a91aaa9ff26",
+  "pr": "https://github.com/unitaryfoundation/qldpc-challenge/pull/3898",
+  "head": "01e44c08a7340f3e4569e8f098eace55da642102",
+  "canonical_checks_sha256": "98f34742a2c089d3797bdef1aa1b7d4cec19615bc72009947356edfc2c4fdc8f",
+  "code_repository": "https://github.com/unitaryfoundation/qldpc-challenge",
+  "code_path": "codes/663-351-10.json"
+}
