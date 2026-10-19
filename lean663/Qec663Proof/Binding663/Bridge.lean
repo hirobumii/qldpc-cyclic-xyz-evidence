@@ -62,8 +62,10 @@ theorem x_kernel_slice_equation (v : Vec 663) (h : Kernel hz v) (i : Fin 4) :
   funext r
   have hr := h _ (List.get_mem hz ⟨i.val * 39 + r.val, by rw [hz_length]; omega⟩)
   rw [dot_ofSupport] at hr
-  rw [sparseParity_perm (literal_hz_rows i r), xPhysicalRow,
-    sparseParity_append, sparseParity_pushSupport, sparseParity_pushSupport] at hr
+  have hr := (sparseParity_perm (literal_hz_rows i r) v).symm.trans hr
+  simp only [xPhysicalRow, sparseParity_append (v := v),
+    sparseParity_pushSupport (ι := xSliceIndex i) (v := v),
+    sparseParity_pushSupport (ι := ccIndex) (v := v)] at hr
   change (xSyndrome (xSlice v i) r ^^ xTarget i (ccPart v) r) = false at hr
   cases hs : xSyndrome (xSlice v i) r <;>
     cases ht : xTarget i (ccPart v) r <;> simp_all
@@ -73,8 +75,10 @@ theorem z_kernel_slice_equation (v : Vec 663) (h : Kernel hx v) (i : Fin 4) :
   funext r
   have hr := h _ (List.get_mem hx ⟨i.val * 39 + r.val, by rw [hx_length]; omega⟩)
   rw [dot_ofSupport] at hr
-  rw [sparseParity_perm (literal_hx_rows i r), zPhysicalRow,
-    sparseParity_append, sparseParity_pushSupport, sparseParity_pushSupport] at hr
+  have hr := (sparseParity_perm (literal_hx_rows i r) v).symm.trans hr
+  simp only [zPhysicalRow, sparseParity_append (v := v),
+    sparseParity_pushSupport (ι := zSliceIndex i) (v := v),
+    sparseParity_pushSupport (ι := ccIndex) (v := v)] at hr
   change (zSyndrome (zSlice v i) r ^^ zTarget i (ccPart v) r) = false at hr
   cases hs : zSyndrome (zSlice v i) r <;>
     cases ht : zTarget i (ccPart v) r <;> simp_all

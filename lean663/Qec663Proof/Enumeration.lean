@@ -50,7 +50,7 @@ theorem chooseSupports_covers {Q : Type} {s cs : List Q} (h : s.Sublist cs) :
       simp
     · simp only [chooseSupports, hz, if_false, List.mem_append]
       exact Or.inr ih
-  | @cons₂ s cs x h ih =>
+  | @cons_cons s cs x h ih =>
     simp only [List.length_cons, chooseSupports, Nat.add_eq_zero_iff,
       Nat.one_ne_zero, and_false, if_false, Nat.add_sub_cancel,
       List.mem_append, List.mem_map]

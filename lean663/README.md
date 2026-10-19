@@ -1,6 +1,6 @@
 # Exact distance of the 663-qubit CSS code
 
-Lean 4.19.0 / Std proof for the literal matrices in
+Lean 4.35.0 / Std proof for the literal matrices in
 [qLDPC Challenge PR #3898](https://github.com/unitaryfoundation/qldpc-challenge/pull/3898).
 
 `Qec663.code663_css_distance_certificate` proves CSS commutation, exact X and
@@ -26,7 +26,7 @@ dual separating functionals prove nonmembership in the full stabilizer span.
 
 ## Replay
 
-Use the pinned Lean 4.19.0 `lean` and `lake` on PATH:
+Use the pinned Lean 4.35.0 `lean` and `lake` on PATH:
 
 ```sh
 python3 generate_candidate.py --check
@@ -39,11 +39,15 @@ complete final axiom lists through `Audit.lean`. It uses Python's standard
 library and Lean's bundled Std; no Mathlib or Python packages are required.
 `bootstrap_lean.sh` can install the pinned official release locally.
 
-The final axioms are `propext`, `Classical.choice`, `Lean.ofReduceBool`, and
-`Quot.sound`. Native finite computations use `native_decide`; compiler and
-runtime correctness are part of the trust boundary. There is no `sorryAx`
-or custom distance axiom. `source-build-receipt.json` records the source-only
-clean build and hashes; `axioms.txt` records its theorem audit.
+The standard axioms are `propext`, `Classical.choice`, and `Quot.sound`.
+Lean 4.35 records each `native_decide` computation with its own generated
+evaluation axiom. `replay.py` checks exact per-theorem dependency lists;
+`Audit.lean` also prints the types of the native evaluation axioms. Compiler
+and runtime correctness remain part of the trust boundary. There is no `sorryAx`
+or custom distance axiom. `source-build-receipt.json` and `axioms.txt` retain
+the historical Lean 4.19.0 clean-build receipt and theorem audit. Each new
+replay writes its current results to `LAST_REPLAY.json` and `build-logs/`;
+these generated files are not committed.
 
 ## Matrix binding
 

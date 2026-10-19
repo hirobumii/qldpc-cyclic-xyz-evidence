@@ -26,7 +26,7 @@ def zTargetInverse (i : Fin 4) : Vec 39 → Vec 39 :=
   targetMap (bInverseSupports i) false
 
 -- 4*39 basis vectors, each equality compares39 output bits; all computations
--- use native_decide; Lean.ofReduceBool is an explicit computational trust boundary.
+-- use native_decide; its generated evaluation axioms trust the compiler/runtime.
 theorem x_inverse_on_basis : ∀ (i : Fin 4) (p : Fin 39),
     xTargetInverse i (xTarget i (oneHot p.val)) = oneHot p.val := by
   have h : ∀ (i : Fin 4) (p r : Fin 39),

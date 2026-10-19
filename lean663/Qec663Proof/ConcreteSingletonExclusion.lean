@@ -16,7 +16,7 @@ def zPreimageBase : Array Nat := #[531015959525, 4429405886, 49774688625, 176352
 def preimageMask (table : Array Nat) (i : Fin 4) (p : Fin 156) : Nat :=
   rotate39 table[i.val * 4 + p.val / 39]! (p.val % 39)
 
--- Native computation (Lean.ofReduceBool): independent exact bitmap binding of every concrete singleton preimage.
+-- Native computation (compiler/runtime trusted): exact bitmap binding of every concrete singleton preimage.
 theorem x_preimage_bits : ∀ (i : Fin 4) (p : Fin 156) (r : Fin 39),
     xTargetInverse i (xSyndrome (oneHot p.val)) r =
       (preimageMask xPreimageBase i p).testBit r.val := by native_decide

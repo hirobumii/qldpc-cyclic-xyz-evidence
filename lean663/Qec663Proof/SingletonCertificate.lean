@@ -48,7 +48,8 @@ def productSeparated (table : Array Nat) : Bool :=
     else true
 
 theorem reflection_correct :
-    ar = a.map reflect ∧ br = b.map reflect := by decide
+    ar = a.map reflect ∧ br = b.map reflect := by
+  constructor <;> apply Array.toList_inj.mp <;> simp only [Array.toList_map] <;> decide
 
 theorem x_product_table_correct : productTableCorrect b a xProducts = true := by decide
 

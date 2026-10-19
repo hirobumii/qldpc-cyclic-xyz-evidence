@@ -123,7 +123,7 @@ proofs and validation evidence documented above.
 
 ## CSS [[663,351,10]] distance proof
 
-`lean663/` contains a standalone Lean 4.19.0 / Std proof for the literal
+`lean663/` contains a standalone Lean 4.35.0 / Std proof for the literal
 CSS matrices in [qLDPC Challenge PR #3898](https://github.com/unitaryfoundation/qldpc-challenge/pull/3898).
 It proves CSS commutation, exact sector distances 10, and exact binary
 phase-free Pauli distance 10 with union support weight. See

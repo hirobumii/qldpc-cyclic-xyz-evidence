@@ -21,10 +21,10 @@ stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S')
 logs = ROOT / 'build-logs' / stamp
 logs.mkdir(parents=True)
 lake = shutil.which('lake')
-assert lake, 'Add the pinned Lean 4.19.0 bin directory to PATH first.'
+assert lake, 'Add the pinned Lean 4.35.0 bin directory to PATH first.'
 lean = str(Path(lake).resolve().parent / 'lean')
 version = subprocess.check_output([lean, '--version'], text=True).strip()
-assert 'version 4.19.0,' in version, version
+assert 'version 4.35.0,' in version, version
 env = dict(os.environ, LEAN_NUM_THREADS='2')
 subprocess.run(['python3', str(ROOT / 'check_binding.py')], check=True, env=env,
                stdout=(logs / 'binding.json').open('w'))
@@ -70,17 +70,48 @@ with (logs / 'axioms.txt').open('w') as out:
 assert result.returncode == 0, (logs / 'axioms.txt')
 axioms = (logs / 'axioms.txt').read_text()
 assert 'sorryAx' not in axioms
-assert 'Lean.ofReduceBool' in axioms
-expected_axioms = {'propext', 'Classical.choice', 'Lean.ofReduceBool', 'Quot.sound'}
-actual_axioms = [set(a.split(', ')) for a in re.findall(r'depends on axioms: \[([^\]]*)\]', axioms)]
-assert len(actual_axioms) == 4 and all(a == expected_axioms for a in actual_axioms), actual_axioms
+standard_axioms = {'propext', 'Classical.choice', 'Quot.sound'}
+# Lean 4.35 records each successful native evaluation separately. Keep an exact
+# per-theorem allowlist rather than accepting arbitrary generated-axiom names.
+x_native = {
+    'QEC663.Finite.actual_B_half4_check',
+    'Qec663.Integration.x_syndrome_parity_basis',
+    'Qec663.Integration.x_target_parity_basis',
+    'Qec663.Structure.x_inverse_on_basis',
+    'Qec663.Structure.x_preimage_bits',
+    'Qec663.Structure.x_preimage_separated',
+}
+z_native = {
+    'QEC663.Finite.actual_AR_half4_check',
+    'Qec663.Integration.z_syndrome_parity_basis',
+    'Qec663.Integration.z_target_parity_basis',
+    'Qec663.Structure.z_inverse_on_basis',
+    'Qec663.Structure.z_preimage_bits',
+    'Qec663.Structure.z_preimage_separated',
+}
+native_owners = {
+    'Qec663.code663_dX_exact': x_native,
+    'Qec663.code663_dZ_exact': z_native,
+    'Qec663.code663_distance_exact': x_native | z_native,
+    'Qec663.code663_css_distance_certificate':
+        x_native | z_native | {'Binding663.actualCSSCommutationCheck'},
+}
+expected_axioms = {
+    name: standard_axioms | {owner + '._native.native_decide.ax_1_1' for owner in owners}
+    for name, owners in native_owners.items()
+}
+actual_axioms = {
+    name: {a.strip() for a in body.split(',')}
+    for name, body in re.findall(r"'([^']+)' depends on axioms: \[([^\]]*)\]", axioms)
+}
+assert actual_axioms == expected_axioms, actual_axioms
 manifest = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()
             for p in sorted(ROOT.rglob('*.lean')) if '.lake' not in p.parts}
 summary = {'passed': True, 'fresh_requested': args.fresh, 'lean_version': version,
            'records': records, 'wall_seconds': round(time.monotonic()-start, 3),
            'source_sha256': manifest, 'axioms_log': str((logs/'axioms.txt').relative_to(ROOT)),
-           'final_axioms': sorted(expected_axioms),
-           'trust': 'standard Lean axioms plus native_decide compiler/runtime (Lean.ofReduceBool)'}
+           'final_axioms': {name: sorted(values) for name, values in actual_axioms.items()},
+           'trust': 'standard Lean axioms plus explicitly listed native_decide evaluation axioms (compiler/runtime trusted)'}
 (logs / 'result.json').write_text(json.dumps(summary, indent=2)+'\n')
 (ROOT / 'LAST_REPLAY.json').write_text(json.dumps(summary, indent=2)+'\n')
 print(json.dumps({'passed': True, 'wall_seconds': summary['wall_seconds'], 'logs': str(logs)}))
