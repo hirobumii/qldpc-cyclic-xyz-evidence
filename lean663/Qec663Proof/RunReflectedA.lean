@@ -1,4 +1,4 @@
-import Qec663Proof.ReflectedA
+import Qec663Proof.OrbitChecks
 import Qec663Proof.CheckerSoundness
 import Qec663Proof.Enumeration
 
@@ -8,8 +8,9 @@ set_option maxRecDepth 100000
 namespace QEC663.Finite
 open QEC663.Architecture
 
--- Explicit native trust tier, matching the original A/B full checks.
-theorem actual_AR_half4_check : checkHalf4 baseAR = true := by native_decide
+-- Same full-check statement, derived from the reflected-A orbit computation.
+theorem actual_AR_half4_check : checkHalf4 baseAR = true :=
+  QEC663.Orbit.actual_AR_full_check
 
 theorem actual_AR_fin_augmentation_all :
     (List.finRange 156).all (fun q => augmentation 39 (columnARFin q)) = true := by decide

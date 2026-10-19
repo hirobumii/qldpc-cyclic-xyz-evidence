@@ -74,7 +74,7 @@ standard_axioms = {'propext', 'Classical.choice', 'Quot.sound'}
 # Lean 4.35 records each successful native evaluation separately. Keep an exact
 # per-theorem allowlist rather than accepting arbitrary generated-axiom names.
 x_native = {
-    'QEC663.Finite.actual_B_half4_check',
+    'QEC663.Orbit.actual_B_orbit_check',
     'Qec663.Integration.x_syndrome_parity_basis',
     'Qec663.Integration.x_target_parity_basis',
     'Qec663.Structure.x_inverse_on_basis',
@@ -82,7 +82,7 @@ x_native = {
     'Qec663.Structure.x_preimage_separated',
 }
 z_native = {
-    'QEC663.Finite.actual_AR_half4_check',
+    'QEC663.Orbit.actual_AR_orbit_check',
     'Qec663.Integration.z_syndrome_parity_basis',
     'Qec663.Integration.z_target_parity_basis',
     'Qec663.Structure.z_inverse_on_basis',
@@ -106,7 +106,7 @@ actual_axioms = {
 }
 assert actual_axioms == expected_axioms, actual_axioms
 manifest = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()
-            for p in sorted(ROOT.rglob('*.lean')) if '.lake' not in p.parts}
+            for p in sorted(ROOT.rglob('*.lean')) if not {'.lake', '.toolchain'}.intersection(p.parts)}
 summary = {'passed': True, 'fresh_requested': args.fresh, 'lean_version': version,
            'records': records, 'wall_seconds': round(time.monotonic()-start, 3),
            'source_sha256': manifest, 'axioms_log': str((logs/'axioms.txt').relative_to(ROOT)),

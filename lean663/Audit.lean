@@ -14,8 +14,8 @@ import Qec663Proof
 #print axioms Qec663.code663_css_distance_certificate
 
 -- Exact generated native-evaluation declarations in Lean 4.35.
-#check QEC663.Finite.actual_B_half4_check._native.native_decide.ax_1_1
-#check QEC663.Finite.actual_AR_half4_check._native.native_decide.ax_1_1
+#check QEC663.Orbit.actual_B_orbit_check._native.native_decide.ax_1_1
+#check QEC663.Orbit.actual_AR_orbit_check._native.native_decide.ax_1_1
 #check Binding663.actualCSSCommutationCheck._native.native_decide.ax_1_1
 #check Qec663.Integration.x_syndrome_parity_basis._native.native_decide.ax_1_1
 #check Qec663.Integration.x_target_parity_basis._native.native_decide.ax_1_1

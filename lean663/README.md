@@ -13,11 +13,25 @@ The physical support splits into a 39-coordinate CC component and four
 156-coordinate slices. The literal check equations and the exact weight
 partition are proved in `Qec663Proof/Binding663/Bridge.lean`.
 
-For zero CC, a nonzero slice has classical distance at least 10. Each
-classical half4 check retains all 24,371,582 supports of size at most four.
-The recursive enumeration coverage, sorting/checker soundness, odd-column
-augmentation, and correspondence with actual binary vectors are proved.
-The X direction uses B columns; Z uses reflected A columns.
+For zero CC, a nonzero slice has classical distance at least 10. The full
+half4 proposition still covers all 24,371,582 supports of size at most four.
+Its proof now uses cyclic translation within the four 39-coordinate blocks.
+`OrbitCoverage.lean` proves that every support has a representative in the
+anchored enumeration; no orbit count is assumed as a proof premise.
+`OrbitSound.lean` proves that distinct minimum-rotation syndrome keys and
+syndrome-stabilizer containment imply injectivity on every translated support.
+`EnumerationNodup.lean` then recovers the original exhaustive Boolean check
+without evaluating its full list. Odd-column augmentation and correspondence
+with actual binary vectors are unchanged. X uses B columns; Z uses reflected A.
+
+`OrbitChecks.lean` binds all three concrete column tables (A, B, reflected A)
+to this reduction. The column bindings and cyclic equivariance use kernel
+proofs; only the reduced finite checks use `native_decide`. Stabilizer tests
+include periodic supports and the empty support. Executable regressions
+reject the constant-syndrome singleton and accept the empty support.
+The implementation generates 966,356 anchored supports and keeps 624,916
+representatives (counts by weight: 1, 4, 310, 15,916, 608,685). These counts
+describe the computation; coverage follows from the structural proof.
 
 For nonzero CC, invertibility and parity force any hypothetical word below
 weight 10 to have two singleton slices. The actual singleton preimage sets
@@ -38,6 +52,8 @@ python3 replay.py --fresh
 complete final axiom lists through `Audit.lean`. It uses Python's standard
 library and Lean's bundled Std; no Mathlib or Python packages are required.
 `bootstrap_lean.sh` can install the pinned official release locally.
+Lake precompiles imported modules so the finite checks execute their compiled
+functions. This does not change the stated native computation trust boundary.
 
 The standard axioms are `propext`, `Classical.choice`, and `Quot.sound`.
 Lean 4.35 records each `native_decide` computation with its own generated

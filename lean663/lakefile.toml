@@ -4,3 +4,6 @@ defaultTargets = ["Qec663Proof"]
 
 [[lean_lib]]
 name = "Qec663Proof"
+
+# Load compiled imports for the finite orbit computations.
+precompileModules = true
