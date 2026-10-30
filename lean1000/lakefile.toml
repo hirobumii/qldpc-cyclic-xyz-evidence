@@ -1,0 +1,6 @@
+name = "qldpc1000"
+version = "0.1.0"
+defaultTargets = ["Qldpc1000"]
+
+[[lean_lib]]
+name = "Qldpc1000"

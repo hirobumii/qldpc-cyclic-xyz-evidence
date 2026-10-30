@@ -129,3 +129,17 @@ It proves CSS commutation, exact sector distances 10, and exact binary
 phase-free Pauli distance 10 with union support weight. See
 [`lean663/README.md`](lean663/README.md) for the construction, replay command
 and native-computation trust boundary.
+
+
+## CSS [[1000,406,6]] distance proof
+
+[`lean1000/`](lean1000/README.md) contains a standalone Lean 4.35.0 / Std
+formalization for the unchanged code and weight-six witnesses from
+[@hirobumii's qLDPC Challenge PR #3863](https://github.com/unitaryfoundation/qldpc-challenge/pull/3863).
+It builds on **Henryk Soboń's structural distance proof**, with algebraic and
+combinatorial replacements for local searches. The combined theorem proves
+CSS commutation, full/stored kernel equivalence and exact sector and
+phase-free Pauli distances six, using only the three standard axioms and no
+native-evaluation axioms. Rank/dimension is outside this Lean theorem.
+See [`lean1000/CREDITS.md`](lean1000/CREDITS.md) for the contribution breakdown
+and [`lean1000/README.md`](lean1000/README.md) for reproduction and trust boundaries.
